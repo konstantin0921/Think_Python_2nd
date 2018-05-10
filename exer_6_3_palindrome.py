@@ -16,6 +16,10 @@ def is_palindrome(word):
 
 	return (first(word) == last(word)) and is_palindrome(middle(word))
 
+def is_palindrome2(word):
+	return word == word[::-1]
+
 
 if __name__ == '__main__':
 	assert(is_palindrome('redivider') is True)
+	assert(is_palindrome2('redivider') is True)
