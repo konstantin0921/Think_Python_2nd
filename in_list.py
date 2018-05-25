@@ -1,11 +1,11 @@
 def in_bisect(sorted_list, target):
-    """returns the index if the target value is in the list, otherwise returns None,
+    """returns True if the target value is in the list, otherwise returns False,
     the underlying algorithm is binary search
 
     sorted_list: a sorted list
     target: target value
 
-    returns: int or None
+    returns: bool
     """
     size = len(sorted_list)
     left = 0
